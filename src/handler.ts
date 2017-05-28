@@ -1,6 +1,6 @@
-import {Message} from "messageMiddleware";
 import {combineReducers, ReducersMapObject} from "redux";
 import "reflect-metadata";
+import {Message} from "Message";
 
 const handlersMetadataKey = Symbol("MessageReducer");
 type Handlers = {
@@ -30,9 +30,6 @@ export const handler: MethodDecorator = (target: object, propertyKey: string, de
 
 
 export type MessageHandler<TMessage, TState> = (message: TMessage, state: TState) => TState;
-export const handler1 = <TMessage, TState>(type: Constructor<TMessage>, handler: MessageHandler<TMessage, TState>) => {
-
-};
 
 export const asReducer = <TState>(target: Constructor<MessageReducer<TState>>) => {
     const obj = new target();

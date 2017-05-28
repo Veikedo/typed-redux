@@ -7,7 +7,3 @@ export const messageMiddleware = store => next => action =>
     isPlainObject(action) || typeof action == "function" || isPromise(action)
         ? next(action)
         : next({ ...action });
-
-export class Message {
-    readonly type = this.constructor.name;
-}
