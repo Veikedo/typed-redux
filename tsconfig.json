@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "sourceMap": true,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "noEmitHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": "./src",
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "importHelpers": true,
+    // "noUnusedLocals": true,
+    "lib": [
+      "dom",
+      "es5",
+      "es6",
+      "es2016"
+    ],
+    "plugins": [
+      {
+        "name": "tslint-language-service"
+      }
+    ]
+  },
+  "exclude": [
+    "dist"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "useTranspileModule": true,
+    "transpileOnly": false
+  },
+  "compileOnSave": false,
+  "buildOnSave": false
+}

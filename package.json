@@ -1,0 +1,20 @@
+{
+  "name": "typed-redux",
+  "version": "1.0.0",
+  "description": "typed redux actions",
+  "main": "index.js",
+  "repository": "https://github.com/Veikedo/typed-redux.git",
+  "author": "Viktor Nikolaev(veikedo@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "is-plain-object": "^2.0.2",
+    "redux": "^3",
+    "reflect-metadata": "^0.1.10",
+    "core-js": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/is-plain-object": "^0.0.2",
+    "tslib": "^1.7.1",
+    "typescript": "2.3.3"
+  }
+}
